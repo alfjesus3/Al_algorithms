@@ -92,6 +92,20 @@ if [ ! -d "$folder_limbo" ]; then
     git clone "$repo_url" "$folder_limbo"
 fi 
 
+folder_plt="matplotlib-cpp"
+if [ ! -d "$folder_plt" ]; then
+    repo_url="https://github.com/lava/matplotlib-cpp.git"
+    git clone "$repo_url" "$folder_plt"
+    cd "$folder_plt"
+        mkdir -p build
+        cd build
+            cmake .. -DBUILD_TESTING=Off  # -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR
+            make -j$nProcs
+            sudo make install
+        cd ..
+    cd ..
+fi 
+
 # folder_nlohmann="nlohmann"
 # if [ ! -d "$folder_nlohmann" ]; then
 #     repo_url="https://github.com/nlohmann/json.git"

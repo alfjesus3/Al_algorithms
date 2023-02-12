@@ -1,9 +1,9 @@
 ## gpr-cpp-toy
 
 ### Goals
-* Adapting the sparse gaussian processes regression toy problem from [here](https://krasserm.github.io/2020/12/12/gaussian-processes-sparse/);
-* Use the [Limbo](https://github.com/resibots/limbo) C++ library for B.O. and GPr;
-* 
+- [ ] Adapting the sparse gaussian processes regression toy problem from [here](https://krasserm.github.io/2020/12/12/gaussian-processes-sparse/);
+- [ x ] Use the [Limbo](https://github.com/resibots/limbo) C++ library for B.O. and GPr;
+- [ ] try in the more complex regression problem -> e.g. multivariable sensory data
 
 
 ### Notes
